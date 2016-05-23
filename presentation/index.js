@@ -80,7 +80,7 @@ export default class Presentation extends React.Component {
           <Slide transition={["zoom"]} bgColor="primary">
             <Image src={images.binder} margin="0px auto 40px" height="293px" />
             <Link href="https://github.com/binder-project/binder">
-              <Text bold caps textColor="secondary">github.com/binder-project/binder</Text>
+              <Text textSize="2em" textColor="secondary">github.com/binder-project/binder</Text>
             </Link>
             <Text textSize="1em" margin="20px 0px 0px" textColor="secondary">Andrew Osheroff</Text>
           </Slide>
@@ -94,11 +94,14 @@ export default class Presentation extends React.Component {
                 <Image src={images.janelia} margin="0px auto 40px" height="293px"/>
               </Fill>
             </Layout>
-            <Text textSize="1em" textColor="secondary"> 
-              The Freeman Lab at the HHMI's Janelia Research Campus
+            <Text textSize="2em" textColor="secondary"> 
+              The Freeman Lab 
+            </Text>
+            <Text textSize="2em" textColor="secondary"> 
+              HHMI's Janelia Research Campus 
             </Text>
             <Link href="thefreemanlab.com">
-              <Text textSize="0.7em" textColor="secondary">
+              <Text textSize="1em" textColor="secondary">
                 thefreemanlab.com
               </Text>
             </Link>
@@ -109,22 +112,20 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["slide"]} bgColor="primary">
-            <Appear fid="1">
               <Layout>
                 <Fill>
-                  <Image src={images.thunder} margin="0px auto 40px" height="293px"/>
+                  <Image src={images.thunder} margin="20px auto 40px" height="200px"/>
                 </Fill>
                 <Fill>
-                  <Image src={images.bolt} margin="0px auto 40px" height="293px"/>
+                  <Image src={images.lightning} margin="20px auto 40px" height="200px"/>
                 </Fill>
                 <Fill>
-                  <Image src={images.lightning} margin="0px auto 40px" height="293px"/>
+                  <Image src={images.bolt} margin="20px auto 40px" padding="40px 0px 0px 0px" height="220px"/>
+                </Fill>
+                <Fill>
+                  <Image src={images.logo} margin="0px auto 40px" height="200px" />
                 </Fill>
               </Layout>
-            </Appear>
-            <Appear fid="2">
-              <Image src={images.logo} margin="0px auto 40px" height="293px" />
-            </Appear>
           </Slide>
 
           <Slide transition={["slide"]} bgColor="primary">
@@ -136,7 +137,7 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide"]} bgColor="primary">
             <Layout>
               <Fill>
-                <Image src={images.github} margin="0px auto 40px" height="150px"/>
+                <Image src={images.github} margin="0px auto 40px" padding="110px 100px 0px 0px" height="230px"/>
               </Fill>
               <Fill>
                 <Image src={images.jupyter} margin="0px auto 40px" height="293px"/>
@@ -356,7 +357,7 @@ export default class Presentation extends React.Component {
               <Text textSize="2em" textColor="secondary" margin="80px">Can I deploy the system myself?</Text>
             </Appear>
             <Appear fid="2">
-              <Text textSize="2em" textColor="secondary">Definitely. Cool example...</Text>
+              <Text textSize="2em" textColor="secondary">Definitely! Recent example...</Text>
             </Appear>
           </Slide>
 
@@ -380,7 +381,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["zoom", "fade"]} bgColor="primary">
             <Text textSize="2em" textColor="secondary">
-              Future directions
+              Future Directions
             </Text>
           </Slide>
 
@@ -429,88 +430,6 @@ export default class Presentation extends React.Component {
             <Appear fid="3"><Text textSize="1.9em" textColor="secondary">- Contributors, bug reporters, and supporters</Text></Appear>
           </Slide>
 
-          <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
-            <Appear fid="1">
-              <Heading size={1} caps fit textColor="primary">
-                Full Width
-              </Heading>
-            </Appear>
-            <Appear fid="2">
-              <Heading size={1} caps fit textColor="primary">
-                Adjustable Darkness
-              </Heading>
-            </Appear>
-            <Appear fid="3">
-              <Heading size={1} caps fit textColor="primary">
-                Background Imagery
-              </Heading>
-            </Appear>
-          </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="primary">
-            <Heading caps fit>Flexible Layouts</Heading>
-            <Layout>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Left
-                </Heading>
-              </Fill>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Right
-                </Heading>
-              </Fill>
-            </Layout>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <BlockQuote>
-              <Quote>Wonderfully formatted quotes</Quote>
-              <Cite>Ken Wheeler</Cite>
-            </BlockQuote>
-          </Slide>
-          <Slide transition={["spin", "zoom"]} bgColor="tertiary">
-            <Heading caps fit size={1} textColor="primary">
-              Inline Markdown
-            </Heading>
-            <Markdown>
-              {`
-![Markdown Logo](${images.markdown.replace("/", "")})
-
-You can write inline images, [Markdown Links](http://commonmark.org), paragraph text and most other markdown syntax
-* Lists too!
-* With ~~strikethrough~~ and _italic_
-* And lets not forget **bold**
-              `}
-            </Markdown>
-          </Slide>
-          <Slide transition={["slide", "spin"]} bgColor="primary">
-            <Heading caps fit size={1} textColor="tertiary">
-              Smooth
-            </Heading>
-            <Heading caps fit size={1} textColor="secondary">
-              Combinable Transitions
-            </Heading>
-          </Slide>
-          <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-            <List>
-              <Appear><ListItem>Inline style based theme system</ListItem></Appear>
-              <Appear><ListItem>Autofit text</ListItem></Appear>
-              <Appear><ListItem>Flexbox layout system</ListItem></Appear>
-              <Appear><ListItem>React-Router navigation</ListItem></Appear>
-              <Appear><ListItem>PDF export</ListItem></Appear>
-              <Appear><ListItem>And...</ListItem></Appear>
-            </List>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading size={1} caps fit textColor="tertiary">
-              Your presentations are interactive
-            </Heading>
-          </Slide>
-          <Slide transition={["spin", "slide"]} bgColor="tertiary">
-            <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-              Made with love in Seattle by
-            </Heading>
-            <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
-          </Slide>
         </Deck>
       </Spectacle>
     );
