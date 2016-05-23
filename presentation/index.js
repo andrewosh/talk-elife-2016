@@ -426,8 +426,9 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide"]} bgColor="#0ebfe9">
             <Text textSize="2em" bold textColor="secondary" margin="0 0 100px 0">Thanks!</Text> 
             <Appear fid="1"><Text textSize="1.9em" textColor="secondary">- The Freeman Lab</Text></Appear>
-            <Appear fid="2"><Text textSize="1.9em" textColor="secondary">- The HHMI and the Janelia Research Campus</Text></Appear>
-            <Appear fid="3"><Text textSize="1.9em" textColor="secondary">- Contributors, bug reporters, and supporters</Text></Appear>
+            <Appear fid="2"><Text textSize="1.9em" textColor="secondary">- Kyle Kelly, Safia Abdalla, Min RK, and the Jupyter folk</Text></Appear>
+            <Appear fid="3"><Text textSize="1.9em" textColor="secondary">- The HHMI and the Janelia Research Campus</Text></Appear>
+            <Appear fid="4"><Text textSize="1.9em" textColor="secondary">- Contributors, bug reporters, and supporters</Text></Appear>
           </Slide>
 
         </Deck>
